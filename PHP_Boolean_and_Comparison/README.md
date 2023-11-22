@@ -31,3 +31,17 @@ A ternary operator (?:) is shorthand conditional operator. It takes three operan
 Any value or expression inside a condition will be converted to TRUE or FALSE. We consider values that will convert to TRUE to be truthy and values that will convert to FALSE to be falsy.
 
 We can get user input from the terminal with the readline() function.
+
+By nesting conditionals within one another, we can create branching decisions.
+
+The logical operator || takes two different boolean values or expressions as its operands and returns a single boolean value. It returns TRUE if either its left operand or its right operand evaluate to TRUE.
+
+The logical && operator returns TRUE only if both of its operands evaluate to TRUE. It returns FALSE if either or both of its operands evaluate to FALSE.
+
+The logical not operator (!) takes only a right operand. It reverses the boolean value of its operand.
+
+The logical exclusive or operator (xor) returns TRUE only if either its left operand or its right operand evaluate to TRUE, but not both or neither.
+
+PHP includes alternate syntax for the || and && operators: we can use or in place of ||, and we can use and in place of &&. These operators work much the same way but have different operator precedence.
+
+We can include code from one file inside another with include which allows us to write mode modular programs.
