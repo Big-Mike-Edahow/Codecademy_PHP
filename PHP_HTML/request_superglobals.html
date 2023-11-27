@@ -1,0 +1,45 @@
+<!-- request_superglobals.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Superglobals</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h3>Contents of Request Superglobals:</h3>
+            $_REQUEST:
+            <?php print_r($_REQUEST);?>
+            <br>
+            $_GET:
+            <?php print_r($_GET);?>
+            <br>
+            $_POST:
+            <?php print_r($_POST);?>
+        </section>
+        <section>
+            <h3>HTML Forms:</h3>
+            <form method="get">
+                <label for="get_name">GET Form: </label>
+                <input type="text" name="get_name">
+                <input type="submit" value="Submit GET">
+            </form>
+            <br>
+            <form method="post">
+                <label for="post_name">POST Form: </label>
+                <input type="text" name="post_name">
+                <br>
+                <input type="submit" value="Submit POST">
+            </form>
+            <a href="index.php">Reset</a>
+        </section>
+    </main>
+</body>
+
+</html>
+

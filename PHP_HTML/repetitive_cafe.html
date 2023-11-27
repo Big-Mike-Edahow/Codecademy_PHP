@@ -1,0 +1,40 @@
+<!-- repetitive_cafe.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetitive Cafe</title>
+</head>
+
+<body>
+    <main>
+        <section>
+
+            <?php
+            $drinks = ["Diet Coke" => 2, "Green Tea" => 3, "Sparkling Water" => 1];
+            $pastries = ["Donuts", "Bagles", "Croissants"]; ?>
+
+            <h1>Welcome to the Repetitive Cafe</h1>
+            <h3>Drinks!</h3>
+            <ul>
+                <?php 
+                foreach($drinks as $drink => $price):
+                echo "<li>$drink at \${$price} </li>";
+                endforeach ?>
+            </ul>
+            <h3>Pastries! ($2 each)</h3>
+            <ol>
+                <?php 
+                foreach($pastries as $pastry):
+                echo "<li>{$pastry} at $2 </li>";
+                endforeach ?>
+            </ol>
+        </section>
+    </main>
+</body>
+
+</html>
+

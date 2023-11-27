@@ -1,0 +1,34 @@
+<!-- get_form_handling.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Form Handling</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <form method="get">
+                <label for="country">Country: </label>
+                <input type="text" name="country">
+                <br>
+                <label for="language">Language: </label>
+                <input type="text" name="language">
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <section>
+            <p>Your language is: <?=$_GET['language'];?></p>
+            <p>Your country is: <?=$_GET['country'];?></p>
+            <a href="index.php">Reset</a>
+        </section>
+    </main>
+</body>
+
+</html>
+
